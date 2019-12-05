@@ -1,4 +1,4 @@
-package com.example.lottery.ui.home
+package com.example.lottery.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.lottery.R
 
-class HomeFragment : Fragment() {
+class DailyGrandFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var dailyGrandViewModel: DailyGrandViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-            ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(this, Observer {
+        dailyGrandViewModel =
+            ViewModelProviders.of(this).get(DailyGrandViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_dailygrand, container, false)
+        val textView: TextView = root.findViewById(R.id.text_dailygrand)
+        dailyGrandViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

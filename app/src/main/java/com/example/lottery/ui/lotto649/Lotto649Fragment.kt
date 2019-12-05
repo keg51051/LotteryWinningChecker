@@ -1,4 +1,4 @@
-package com.example.lottery.ui.notifications
+package com.example.lottery.ui.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.lottery.R
 
-class NotificationsFragment : Fragment() {
+class Lotto649Fragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private lateinit var lotto649ViewModel: Lotto649ViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-            ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
-        notificationsViewModel.text.observe(this, Observer {
+        lotto649ViewModel =
+            ViewModelProviders.of(this).get(Lotto649ViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_lotto649, container, false)
+        val textView: TextView = root.findViewById(R.id.text_lotto649)
+        lotto649ViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root
