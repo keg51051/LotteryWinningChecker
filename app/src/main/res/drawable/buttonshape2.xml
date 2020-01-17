@@ -1,10 +1,8 @@
 <shape xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:ignore="MissingDefaultResource">
-    <gradient
-        android:startColor="#74ebd5"
-        android:endColor="#ACB6E5"
-        android:angle="45"
+    <solid
+        android:color="@color/burlyWood"
         />
     <corners android:bottomLeftRadius="20dip"
         android:topRightRadius="20dip"

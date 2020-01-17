@@ -1,4 +1,4 @@
-package com.example.lottery.ui.notifications
+package com.example.lottery.ui.dailygrand
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.example.lottery.R
 
 class DailyGrandFragment : Fragment() {
@@ -20,7 +20,7 @@ class DailyGrandFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         dailyGrandViewModel =
-            ViewModelProviders.of(this).get(DailyGrandViewModel::class.java)
+            ViewModelProvider(this).get(DailyGrandViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_dailygrand, container, false)
         val textView: TextView = root.findViewById(R.id.text_dailygrand)
         dailyGrandViewModel.text.observe(this, Observer {

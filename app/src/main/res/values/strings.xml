@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Lottery</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_lottoMax">Lotto Max</string>
+    <string name="title_lotto649">Lotto 6/49</string>
+    <string name="title_dailyGrand">Daily Grand</string>
 </resources>

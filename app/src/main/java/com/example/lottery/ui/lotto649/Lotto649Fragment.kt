@@ -1,4 +1,4 @@
-package com.example.lottery.ui.dashboard
+package com.example.lottery.ui.lotto649
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.example.lottery.R
 
 class Lotto649Fragment : Fragment() {
@@ -20,7 +20,7 @@ class Lotto649Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         lotto649ViewModel =
-            ViewModelProviders.of(this).get(Lotto649ViewModel::class.java)
+            ViewModelProvider(this).get(Lotto649ViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_lotto649, container, false)
         val textView: TextView = root.findViewById(R.id.text_lotto649)
         lotto649ViewModel.text.observe(this, Observer {

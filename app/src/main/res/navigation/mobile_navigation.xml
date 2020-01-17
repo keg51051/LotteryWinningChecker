@@ -3,23 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_lottoMax">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.lottery.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_lottoMax"
+        android:name="com.example.lottery.ui.lottomax.LottoMaxFragment"
+        tools:layout="@layout/fragment_lottomax" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.lottery.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_lotto649"
+        android:name="com.example.lottery.ui.lotto649.Lotto649Fragment"
+        tools:layout="@layout/fragment_lotto649" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.lottery.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_dailyGrand"
+        android:name="com.example.lottery.ui.dailygrand.DailyGrandFragment"
+        tools:layout="@layout/fragment_dailygrand" />
 </navigation>
