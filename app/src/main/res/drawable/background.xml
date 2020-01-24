@@ -1,0 +1,12 @@
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+    <solid
+        android:color="@color/deep_sky_blue"
+        />
+    <corners android:bottomLeftRadius="20dip"
+        android:topRightRadius="20dip"
+        android:topLeftRadius="20dip"
+        android:bottomRightRadius="20dip"
+        />
+</shape>
